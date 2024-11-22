@@ -1,204 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abdaal Portfolio</title>
-    <link rel="icon" type="image/png" href="favicon.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- navigation  -->
-    <div class="logo_header">
-      <a href="#home" class="logo">ABDAAL ALI ibn Mohd.SOBAN</a>
-    </div>
-    <div class="navigation navigation-display-none" id="navigation">
-      <nav>
-        <ul>
-          <li id="nav-link-1" class="slide-out-1">
-            <a href="#home"><i class="nav-icon fa-solid fa-house"></i> Home</a>
-          </li>
-          <li id="nav-link-2" class="slide-out-2">
-            <a href="#about"
-              ><i class="nav-icon fa-solid fa-person"></i> About
-            </a>
-          </li>
-          <li id="nav-link-3" class="slide-out-3">
-            <a href="#projects">
-              <i class="nav-icon fa-solid fa-laptop-code"></i>
-              Projects
-            </a>
-          </li>
-          <li id="nav-link-4" class="slide-out-4">
-            <a href="contact/contact.html"
-              ><i class="nav-icon fa-solid fa-square-phone"></i> Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <!-- menu bars  -->
-    <div class="menu-bars" id="menu-bars">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-    </div>
-    <!-- Sections -->
-
-    <header id="home">
-      <section class="intro">
-        <div class="name home-container">
-          <h1 class="intro-header">Hi, I'm</h1>
-          <h1 class="intro-title">
-            <strong>Abdaal Ali</strong>
-          </h1>
-
-          <div class="container intro-subtitle intro-para">
-            <span class="text first-text">I'm a</span>
-            <span class="text sec-text highlight">Freelancer</span>
-          </div>
-
-          <!-- <img src="images/rahul (3).jpg" alt="my pic" /> -->
-          <div class="social-link">
-            <a href="https://www.instagram.com/abdaalali18/"
-              ><span class="social-icon">
-                <i class="fa-brands fa-instagram"></i></span
-            ></a>
-            <a href="https://www.facebook.com/abdaalali18/"
-              ><span class="social-icon">
-                <i class="fa-brands fa-facebook-square"></i></span
-            ></a>
-          </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            height: 100vh;
+            background-color: #d3ebee;
+        }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .gallery-img {
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        .project-card {
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .contact-section {
+            background-color: #f8f9fa;
+            padding: 80px 0;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home"><strong>Abdaal ALi</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+        
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </section>
-    </header>
+    </nav>
 
-    <!-- About -->
-    <section class="about-me" id="about">
-      <div class="name">
-        <h2 class="title">About Me</h2>
-        <div class="about-container column left">
-          <div class="about-pic">
-            <img class="about-img" src="uni.jpg" />
-          </div>
-
-          <div class="about-content column right">
-            <h3 class="about-text">I'm Abdaal and I'm a
-                    <span class="highlight-2">Front-End Developer.</span></h3> 
-            <p class="about-para">
-              I am extremely proficient in Front-End Development using HTML5,
-              Cascade Style Sheets (CSS3),Bootstrap, Javascript, ReactJs And
-              apart from Front-End, I have  good knowledge in Back-End using
-              nodeJs, ExpressJs as well as in designing using canva, Sketch &
-              Figma. I also have good knowledge  in programming languages like C,
-              C++ and continuously engage in trying to extend my skills with new
-              technology.
-            </p>
-            <p class="about-resume">Any Type Of Query & Discussion</p>
-
-            <a href="mailto:aabdaal02@gmail.com"
-              ><p class="email">
-                <i class="about-icon fa-solid fa-envelope"></i>
-                aabdaal02@gmail.com
-              </p></a
-            >
-            <a class="about-btn btn" href="https://drive.google.com/file/d/1MXeM-7fgrapyulwEqvLvMo47cgQyXig0/view?usp=drivesdk">Download Resume</a>
-          </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container text-center">
+            <img src="uni.jpg" alt="Profile" class="profile-img mb-4">
+            <h1 class="display-4"><strong>Abdaal ALi</strong></h1>
+            <h2 class="lead">Full-Stack Web Developer</h2>
+            <div class="mt-4">
+                <a href="#projects" class="btn btn-primary me-2">View Projects</a>
+                <a href="#contact" class="btn btn-outline-primary">Contact Me</a>
+            </div>
         </div>
-      </div>
     </section>
-    <!----------------------------------------------------------------- Project----------------------------------------------------------------->
-    <section class="project" id="projects">
-      <h2 class="title project-title">Projects</h2>
-      <p class="subpara">
-        I create responsive websites that are fast, easy to use, and built with
-        best practices. The main area of 
-        my expertise is Full-Stack development,
-        HTML5, Cascade Style Sheets(CSS3), JavaScript,ReactJs,
-         NodeJs,ExpressJs,Mongodb  building small and medium
-        web apps, features, animations, and coding interactive layouts.
-      </p>
-      <div class="project-container">
-        <div class="project-card">
-          <h4 class="subtitle">Ecommerce Website</h4>
-          <p class="project-para">
-            It is a complete Ecommerce website created using ReactJs NodeJs, ExpressJs and Mongodb.
-            It is full responsive and complete functional website 
-          </p>
-          <hr />
-          <p>
-            <a
-              class="project-link"
-              href="https://github.com/abdaal12/Ecommerce-React"
-              >View here</a >
-          </p>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Projects</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">E-Commerce Website</h5>
+                            <p class="card-text">Fullstack project implemented using React,Node,Express and Mongodb.
+                            </p>
+                            <a href="https://github.com/abdaal12/Ecommerce-React" class="btn btn-primary">Github</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Confectionery Website</h5>
+                            <p class="card-text">A responsive project using Bootstrap deployed on github pages</p>
+                            <a href="https://abdaal12.github.io/usconfectionery/" class="btn btn-primary">Live Here</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Neflix Homepage </h5>
+                            <p class="card-text">Front-end project using HTML,CSS,and Bootstrap</p>
+                            <a href="https://github.com/abdaal12/netflix-home-page" class="btn btn-primary">Github</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="project-card">
-          <h4 class="subtitle"> Netflix Clone</h4>
-          <p class="project-para">
-          It is a basic html and css based front-end project.  Netflix home page,which is responsive and smooth.
-          </p>
-          <hr />
-          <p>
-            <a
-              class="project-link"
-              href="https://github.com/abdaal12/netflix-home-page/tree/main"
-              >View here</a
-            >
-          </p>
-        </div>
-        <div class="project-card">
-          <h4 class="subtitle">Profile Analyzer AI</h4>
-          <p class="project-para">
-            It a Python project. In this app we have to give some social media infromation about person in return will give
-            some points about person's interest.
-          </p>
-          <hr />
-          <p>
-            <a
-              class="project-link"
-              href="https://github.com/abdaal12/PythonProjects.git"
-              >View here</a
-            >
-          </p>
-        </div>
-        <div class="project-card">
-          <h4 class="subtitle">Hospital Management system</h4>
-          <p class="project-para">
-           This system help us to maintain and manage patients records
-          </p>
-          <hr />
-          <p>
-            <a class="project-link" href="https://github.com/abdaal12/PythonProjects.git"
-              >View here</a
-            >
-          </p>
-        </div>
-      </div>
     </section>
-    <!-------------------------------------------------------------  contact -------------------------------------------------------->
-    <footer class="Connected">
-      <h2 class="footer-title">Stay Connected</h2>
-      <a href="mailto:aabdaal02@gmail.com"
-        ><p class="email footer-email">
-          <i class="about-icon fa-solid fa-envelope"></i>
-          aabdaal02@gmail.com
-        </p></a
-      >
-      <div class="footer-link">
-        <a href="https://www.instagram.com/abdaalali18/"
-          ><div class="social-icons icons">
-            <i class="fa-brands fa-instagram"></i></div
-        ></a>
-        <a href="https://www.facebook.com/abdaalali18/"
-          ><div class="social-icons icons">
-            <i class="fa-brands fa-facebook-square"></i></div
-        ></a>
-      </div>
-    </footer>
-  </body>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Me</h2>
+            <div class="contact-form">
+                <form action="https://formsubmit.co/aabdaal02@gmail.com" method="POST">
+                    <!-- Honeypot -->
+                    <input type="text" name="_honey" style="display: none">
+                    
+                    <!-- Disable Captcha -->
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <!-- Success Page -->
+                    <input type="hidden" name="_next" value="https://yourdomain.com/thanks.html">
+                    
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subject" name="subject" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
